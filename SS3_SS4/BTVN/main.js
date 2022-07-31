@@ -40,6 +40,14 @@ function clock(){
         second += 1;
     }, 1000)
 
+    setInterval((minute) => {
+        minute += 1;
+    }, 60000)
+
+    setInterval((hour) => {
+        hour += 1;
+    }, 3600000)
+
     document.getElementById("clock").innerHTML = hour + ":" + minute + ":" + second;
 }
 
