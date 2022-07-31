@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.ex2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+}
+
+.ex2:hover{
+    background-color: yellow;
+}
+
+#clock{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(176, 129, 34);
+    padding: 10px;
+}
