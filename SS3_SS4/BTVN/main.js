@@ -20,12 +20,12 @@ function numberOneTriangle(){
 numberOneTriangle();
 
 //4
-let timer = new Date();
-
 function clock(){
+    let timer = new Date();
     let hour = timer.getHours();  
     let minute = timer.getMinutes();  
     let second = timer.getSeconds(); 
+
     if(hour < 10) {
         hour = "0" + hour;
     }
@@ -35,24 +35,12 @@ function clock(){
     if(second < 10) {
         second = "0" + second;
     }
-    
-    setInterval((second) => {
-        second += 1;
-    }, 1000)
 
-    setInterval((minute) => {
-        minute += 1;
-    }, 60000)
-
-    setInterval((hour) => {
-        hour += 1;
-    }, 3600000)
-
-    document.getElementById("clock").innerHTML = hour + ":" + minute + ":" + second;
+    document.getElementById('hour').innerHTML = hour;
+    document.getElementById('minute').innerHTML = minute;
+    document.getElementById('second').innerHTML = second;
 }
 
-clock();
-
-
+var time = setInterval(clock, 1000);
 
 
