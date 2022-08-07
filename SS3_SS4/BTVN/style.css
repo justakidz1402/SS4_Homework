@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .ex2{
     width: 100px;
     height: 100px;
     background-color: red;
-    
+    margin-bottom: 20px;
 }
 
 .ex2:hover{
@@ -16,9 +19,40 @@
 }
 
 #clock{
-    width: 100px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(176, 129, 34);
+    background-color: rgb(102, 102, 255);
     padding: 10px;
+    margin-bottom: 20px;
+}
+
+.time{
+    width: 100px;
+    justify-content: center;
+    margin: 10px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.time h3{
+    display: flex;
+    width: 100px;
+    padding: 20px;
+    background-color: rgb(68, 68, 255);
+    margin-top: 3px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.time h1{
+    width: 100px;
+    padding: 20px;
+    background-color: rgb(68, 68, 255);
+    border-radius: 8px;
+}
+
+.time .second{
+    background-color: rgb(253, 92, 92);
 }
