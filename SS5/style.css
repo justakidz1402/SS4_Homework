@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 100%;
+    background-color: rgb(238, 143, 143);
+    display: flex;
+    justify-content: center;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+.menu ul li a {
+    color: white;
+    padding: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.menu ul li:hover {
+    background-color: rgb(177, 104, 104);
+}
+
+.menu ul li:hover a {
+    color: rgb(238, 224, 143);
+}
+
+.menu ul li .a1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(238, 224, 143);
+    -webkit-transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+    -o-transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+    transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+}
+
+.menu ul li a:hover:after {
+    width: 100%;
+}
+
+.menu ul li .a2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(238, 224, 143);
+    -webkit-transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+    -o-transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+    transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+}
+
+.menu ul li .a3:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(238, 224, 143);
+    -webkit-transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+    -o-transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+    transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+}
+
+.a4:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    width: 0;
+    background: transparent;
+}
+
+.a4:after {
+    transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
+
+.a4:hover:after {
+    width: 100%;
+    left: 0;
+    background: rgb(238, 224, 143);
+}
+
+.a5:before, .a5:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(238, 224, 143);
+    transition: 0.5s;
+}
+
+.a5:after{
+    left: 0;
+    bottom: 0;
+}
+
+.a5:before{
+    left: 0;
+    top: 0;
+}
+
+.a5:hover:after, .a5:hover:before{
+    width: 100%;
+}

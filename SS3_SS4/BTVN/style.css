@@ -23,8 +23,14 @@
     display: flex;
     justify-content: center;
     background-color: rgb(102, 102, 255);
-    padding: 10px;
+    padding: 0 20px;
     margin-bottom: 20px;
+}
+.Clock_Parent h1{
+    text-align: center;
+    background-color: rgb(102, 102, 255);
+    padding-top: 10px;
+    color: white;
 }
 
 .time{
